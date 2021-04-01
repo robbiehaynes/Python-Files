@@ -14,7 +14,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, LSTM
 
 #Load data
-company = "APPL"
+company = "FB"
 
 start = dt.datetime(2012,1,1)
 end = dt.datetime(2020,1,1)
@@ -80,5 +80,10 @@ predicted_prices = model.predict(x_test)
 predicted_prices = scaler.inverse_transform(predicted_prices)
 
 #Plot the Test Predictions
-plt.plot(actual_prices)
-plt.plot(predicted_prices)
+plt.plot(actual_prices, color="black", label=f"Actual {company} Price")
+plt.plot(predicted_prices, color="green", label=f"Predicted {company} Price")
+plt.title(f"{company} Share Price")
+plt.xlabel('Time')
+plt.ylabel(f'{company} Share Price')
+plt.legend()
+plt.show()
