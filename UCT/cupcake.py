@@ -28,6 +28,12 @@ if r == 'no':
             r = input('Did the cat lick it? (yes/no)\n')
             if r == 'no':
                 decision = 'Eat it.'
+            else:
+                r = input('Is your cat healthy? (yes/no)\n')
+                if r=='no':
+                    decision = 'Your call.'
+                else:
+                    decision = 'Eat it.'
         else:
             r = input('Are you a puma? (yes/no)\n')
             if r=='no':
