@@ -2,8 +2,6 @@
 #HYNROB001 - Rob Haynes
 #6 April 2021
 
-from math import round
-
 i = int(eval(input("Enter the value of i:\n")))
 j = int(eval(input("Enter the value of j:\n")))
 k = int(eval(input("Enter the value of k:\n")))
