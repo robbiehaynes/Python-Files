@@ -1,6 +1,6 @@
 #Robbie Haynes
 #24 March 2021
-#Testing change
+#Change V2.0
 
 hours = int(eval(input("Enter the hours: ")))
 minutes = int(eval(input("Enter the minutes: ")))
